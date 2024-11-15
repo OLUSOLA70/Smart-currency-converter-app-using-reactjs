@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.App {
+    height: 50vh;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.heading {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.container {
+    height: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1f1da7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left, .middle, .right {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.middle, .right {
+    margin: 5px 0;
+}
+
+.switch {
+    padding: 5px;
+    background-color: rgb(59, 91, 7);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+    border: 2px solid forestgreen;
+    background-color: rgb(226, 252, 184);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+p, h3, button, .switch {
+    color: forestgreen;
+}
+
+h3 {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.converted-amount {
+    margin-top: 15px;
+}
+
+.converted-amount h2 {
+    font-size: 16px;
+    color: forestgreen;
+    margin-bottom: 5px;
+}
+
+.converted-amount p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Custom styles for react-select to match the compact theme */
+.select__control {
+    min-height: 36px !important;
+}
+
+.select__value-container {
+    padding: 2px 8px !important;
+}
+
+.select__input-container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
